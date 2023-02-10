@@ -1,0 +1,9 @@
+// Module 26: Event addEventListener,Event Bubble Note: Date 9/02/2023
+
+// 1. common DOM events
+// 2. Title means Tooltip
+// 3. onclick
+// 4. addEventListene / event handelar
+// 5. Event Bubble
+// 6. stopPropagation
+// 7. stopImmediatePropagation

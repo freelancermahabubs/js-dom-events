@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practices JS DOM Events</title>
+</head>
+<body>
+  <button onclick="console.log('Click Me')">click Me</button>
+  <button onclick="console.log(45)">Red Me</button>
+
+  <h3>Default Text</h3>
+ 
+  <h1 onclick="console.log('Mahaub is a Great Developer in BanglaDesh')">Mahabub is a Good Boy</h1>
+  <!-- option number 1 -->
+  <button onclick="document.body.style.backgroundColor = 'yellow'">Make Yellow</button>
+  <!-- option number 02 -->
+  <button onclick="makeRed()">Make Red</button>
+  <!-- option number 03 -->
+  <button id="make-blue">Make Blue</button>
+  <button id="make-purple">Make Purple</button>
+  <button id="make-tomato">Make Tomato</button>
+  <!-- option 04 -->
+  <button id="make-pink">Make Pink</button>
+  
+  <!-- option 04 another -->
+  <button id="make-green">Make Green</button>
+  <!-- option 04 final  -->
+  <button id="make-goldenrod">Make GoldenRod</button>
+
+  <h3 id="handler-status">Mahaub</h3>
+  <button onclick="handelOnClick()">Handel Event Add onClick Function</button>
+  <button id="event-listener">Handle event by addEventListener</button>
+  <script src="js/parctes.js"></script>
+  <script>
+      // option 01
+    function handelOnClick(){
+      const handlerStatus = document.getElementById('handler-status');
+      handlerStatus.innerText = "Mahaub Alom"
+    }
+
+    // option 02
+    document.getElementById('event-listener').addEventListener('click', function(){
+      const handlerStatus = document.getElementById('handler-status');
+      handlerStatus.innerText = "Text Update by add event listener button"
+    })
+  </script>
+</body>
+</html>

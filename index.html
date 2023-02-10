@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS DOM EVENTS</title>
+</head>
+<body>
+  <!-- syestem number 1 -->
+  <h1 onclick="console.log('I am Click')">DOM er ajke Special Events</h1>
+  <button title="This is a Tooltip" onclick="console.log(7)">Click Me</button>
+  <button onclick="console.log(65)">Another Button</button>
+
+  <button onclick="console.log('click Me')">Third Button</button>
+  <button onclick="console.log(100)">Fourth Button</button>
+  <h2 onclick="console.log('Mahabub is a Grate Developer')">Mahaub is a Good Boy</h2>
+  <br>
+  <!-- syestem number 02 -->
+  <button onclick="document.body.style.backgroundColor = 'yellow'">Make Yellow</button>
+  <!-- <button onclick="makeRed()">Make Red</button> -->
+  <!-- // option 02 -->
+  <button onclick="makeRed()">Make Red</button>
+  <button id="make-blue">Make Blue</button>
+  <button id="make-purple">Make Purple</button>
+  <button id="make-tomato">Make Tomato</button>
+  <!-- option 04 -->
+  <button id="make-pink">Make Pink</button>
+  <!-- option another 04 -->
+  <button id="make-green">Make Green</button>
+  <!-- option 04 final -->
+  <button id="make-goldenrod">Make GoldenRod</button>
+  <script src="js/events.js"></script>
+  <script>
+  const makePurpleButton = document.getElementById('make-purple');
+  makePurpleButton.onclick = makePurple;
+  function makePurple(){
+    document.body.style.backgroundColor = 'purple'
+  }
+  
+  document.getElementById('make-goldenrod').addEventListener('click', function(){
+    document.body.style.backgroundColor = 'goldenrod';
+  })
+  </script>
+
+</body>
+</html>
